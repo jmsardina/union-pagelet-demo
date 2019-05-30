@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <!-- Start pagelet snippet -->
+    <!-- This pagelet snippet would ideally be introduced using the `@xo-union/pagelet/lib/load-snippet` as a safer alternative to hardcoding this. -->
+    <script async src="https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js"></script>
+    <script>!function(){var n=[];document.currentScript.previousElementSibling.addEventListener("load",function(){n.forEach(function(n){var i=n[0],e=n[1];this[i].apply(this,e)},window.UNION_INTERNAL_MODULE_SYSTEM)}),window.UNION_INTERNAL_MODULE_SYSTEM=window.UNION_INTERNAL_MODULE_SYSTEM||{require:function(){n.push(["require",arguments])},define:function(){n.push(["define",arguments])}}}()</script>
+    <style>[data-pagelet-render-state=error]~[data-pagelet-role=placeholder],[data-pagelet-render-state=ready]~[data-pagelet-role=placeholder]{display:none}</style>
+    <!-- End pagelet snippet -->
+  </head>
+  <body>
+    <h3>Demo</h3>
+    <div data-pagelet-container-id="remote-union-header"></div>
+
+    <!-- Keeping this at the bottom so that the mount nodes are on the DOM -->
+    <script type="text/javascript" src="../dist/main.js"></script>
+  </body>
+</html>
