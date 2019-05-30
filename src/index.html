@@ -6,9 +6,21 @@
     <script>!function(){var n=[];document.currentScript.previousElementSibling.addEventListener("load",function(){n.forEach(function(n){var i=n[0],e=n[1];this[i].apply(this,e)},window.UNION_INTERNAL_MODULE_SYSTEM)}),window.UNION_INTERNAL_MODULE_SYSTEM=window.UNION_INTERNAL_MODULE_SYSTEM||{require:function(){n.push(["require",arguments])},define:function(){n.push(["define",arguments])}}}()</script>
     <style>[data-pagelet-render-state=error]~[data-pagelet-role=placeholder],[data-pagelet-render-state=ready]~[data-pagelet-role=placeholder]{display:none}</style>
     <!-- End pagelet snippet -->
+    <style>
+      body {
+        /*
+         * Set this to a non-white background so that we can see the placeholder component,
+         * which gets rendered temporarily while the header content is loading.
+         */
+        background: gray;
+      }
+    </style>
   </head>
   <body>
-    <h3>Demo</h3>
+    <h3>Using @xo-union/tk-component-header-nav/lib/remote</h3>
+    <div id="header-root"></div>
+
+    <h3>Creating Your Own RemotePagelet To Mount Header Nav</h3>
     <div data-pagelet-container-id="remote-union-header"></div>
 
     <!-- Keeping this at the bottom so that the mount nodes are on the DOM -->

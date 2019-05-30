@@ -4,11 +4,16 @@
   "description": "Sandbox to demo pagelet",
   "main": "index.js",
   "scripts": {
-    "bundle": "node_modules/.bin/webpack"
+    "bundle": "node_modules/.bin/webpack",
+    "start": "python -m SimpleHTTPServer 8081",
+    "open": "open http://localhost:8081/src/"
   },
   "license": "ISC",
   "dependencies": {
     "@xo-union/pagelet": "^1.0.1",
+    "@xo-union/tk-component-header-nav": "^8.5.1",
+    "@xo-union/tk-css-breakpoints": "^1.0.7",
+    "@xo-union/tk-css-typography": "^3.0.23",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
